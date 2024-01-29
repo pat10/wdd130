@@ -1,0 +1,26 @@
+h1 {
+    color: pink;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.me {
+    width: 100%;
+    border: 10px solid red;
+    box-sizing: border-box;
+}
+
+.constrained {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: black;
+}

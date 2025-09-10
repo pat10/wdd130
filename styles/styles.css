@@ -1,3 +1,30 @@
+nav {
+	background-color: darkblule;
+	padding: 10px;
+}
+
+nav a {
+	color: white;
+	display: block;
+	padding: 20px;
+}
+
+h1 {
+	color: darkblue;
+}
+
+img {
+	width: 150px;
+	height: auto;
+	border: 1px solid black;
+	padding: 2px;
+	box-shadow: 0 0 30px gray;
+}
+
+p {
+	padding: 0;
+}
+
 main {
 	max-width: 840px;
 }
@@ -7,15 +34,11 @@ main img {
 	height: auto;
 }
 
-p {
-	padding: 0;
-}
-
 aside {
 	width: 320px;
 	margin: 10px;
 	padding: 5px;
-	border: 1px solid rgb (0 0 0 / 0.2);
+	border: 1px solid rgb(0 0 0 / 0.2);
 	background-color: ghostwhite;
 	color: #222222;
 	text-align: center;

@@ -8,7 +8,7 @@
 }
 
 * {
-	margin: o;
+	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
@@ -34,7 +34,7 @@ h1, h2 {
 }
 
 nav, p, section, article {
-	margin: 16px;
+	margin: 16px; 
 	padding: 9px;
 }
 
@@ -50,6 +50,19 @@ nav, p, section, article {
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+.hero article {
+	position: absolute;
+	bottom: 40px;
+	width: 600;
+	padding: 16px;
+	background-color: var(--accent2-color);
+	opacity: 0.9;
+}
+
+.hero article p {
+	margin: 0; /* Our padding is already doing the job here. */
 }
 
 h1 {

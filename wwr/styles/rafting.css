@@ -1,6 +1,6 @@
 :root {
-	--primary-color: #0077b6;
-	--secondary-color: #f4a261;
+	--primary-color: #89CFF0;
+	--secondary-color: darkorange;
 	--accent1-color: #333333;
 	--accent2-color: ghostwhite;
 	--heading-font: "Times New Roman", Georgia, serif;
@@ -20,7 +20,33 @@ body {
 
 header {
 	background-color: var(--primary-color);
-	color: var(--accent2-color);
+	/* color: var(--accent2-color); */
+	display: grid;
+	grid-template-columns: 1fr 1fr 3fr;
+	width: 500px;
+}
+
+header img {
+	grid-column: 1 / 2;
+	width: 100%;
+}
+
+header nav {
+	grid-column: 3 / -1;
+	display: flex;
+	align-items: center;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	column-gap: 30px;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--accent1-color);
+	font-weight: bold;
 }
 
 header, main, footer {
@@ -28,9 +54,37 @@ header, main, footer {
 	margin: 0 auto;
 }
 
+footer {
+	display: grid;
+	grid-template-columns: 2fr 3fr 1fr;
+	background-color: var(--primary-color);
+	/* color: var(--accent2-color); */
+}
+
+footer p {
+	grid-column: 2 / 3;
+	text-align: center;
+}
+
+footer nav {
+	grid-column: 3 / -1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	column-gap: 10px;
+}
+
+footer nav img {
+	width: 100%;
+}
+
 h1, h2 {
 	font-family: var(--heading-font);
-	color: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+section h2 {
+	margin-bottom: 10px;
 }
 
 nav, p, section, article {
@@ -55,7 +109,7 @@ nav, p, section, article {
 .hero article {
 	position: absolute;
 	bottom: 40px;
-	width: 600px;
+	max-width: 900px;
 	padding: 16px;
 	background-color: var(--accent2-color);
 	opacity: 0.9;
@@ -80,4 +134,41 @@ h1 {
 	float: right;
 	width: 125px;
 	height: auto;
+}
+
+.history-grid {
+	display: grid;
+	grid-template-columns: 1fr 230px 1fr;
+	column-gap: 10px; 
+}
+
+.history-grid img {
+	width: 100%;
+}
+
+.history-grid h2 {
+	grid-column: 1 / -1;
+}
+
+.history-grid p {
+	margin: 0;
+}
+
+.adventure-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	column-gap: 10px;
+}
+
+.adventure-grid h2 {
+	grid-column: 1 / -1;
+}
+
+.adventure-grid img {
+	width: 100%;
+}
+
+figcaption {
+	text-align: center;
+	font-style: italic;
 }
